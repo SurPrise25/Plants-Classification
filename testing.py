@@ -5,7 +5,7 @@ import tensorflow as tf
 import pandas as pd
 import numpy as np
 
-model = tf.keras.models.load_model('trained_model.keras')
+model = tf.keras.models.load_model('trained_model.keras', compile=False)
 
 label_map = {
     'rice': 0,
